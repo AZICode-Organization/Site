@@ -20,14 +20,55 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <div className="container mx-auto px-12 py-4">
         <br />
+        
         <br />
         <br />
         <br />
         <br />
+        1
         <br />
         <HeroSection />
         <br />
         <br />
+        2
+        <div className="relative px-12 py-4 -mx-20">
+          {/* Vídeo de background */}
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          >
+            <source src="/images/autolooped.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="relative z-10 px-12"><HeroSection14 /></div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
+        <br />
           <br />
           <br />
           <br />
@@ -42,6 +83,7 @@ export default function Home() {
           <br />
           <br />
         <br />
+        3
         <div className="relative px-12 py-4 -mx-20">
           {/* Imagem de background */}
           <Image src="/images/GirlHero2.jpg" alt="Hero Image" className="absolute"  layout="fill" />
@@ -70,13 +112,155 @@ export default function Home() {
           <br />
         </div>
         <br />
+        4
         <HeroSection1 />
         <br />
+          <br />
+          <br />
+          5
+        <br />
+        <div className="relative px-12 py-4 -mx-20">
+          {/* Vídeo de background */}
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          >
+            <source src="/images/purple.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="relative z-10 px-12"><HeroSectionV1 /></div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
+        <br />
+          <br />
+          <br />
+          <br />
+        <br />
+          <br />
+          <br />
+          6
+        <br />
+        <div className="relative px-12 py-4 -mx-20">
+          {/* Vídeo de background */}
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          >
+            <source src="/images/purple.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="relative z-10 px-12"><HeroSectionV26 /></div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <br />
+        <br />
+        <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        <br />
+        7
+        <div className="relative px-12 py-4 -mx-20">
+          {/* Vídeo de background */}
+          <video
+            autoPlay
+            loop
+            muted
+            className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          >
+            <source src="/images/GirlHero3Animado.mp4" type="video/mp4" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="relative z-10 px-12"><HeroSectionV1 /></div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
         <br />
         <br />
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        8
         <br />
         <div className="relative px-12 py-4 -mx-20">
           {/* Vídeo de background */}
@@ -124,6 +308,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        9
         <br />
         <HeroSection11 />
         <br />
@@ -166,6 +351,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        10
         <br />
         <HeroSectionV12 />
         <br />
@@ -174,6 +360,29 @@ export default function Home() {
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        11
+        <br />
+        <br />
+        <HeroSectionV12 />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /> 
+        <br />
+        <br />
+        <br />
+        <br />
+        12
         <br />
         <br />
         <div className="relative px-12 py-4 -mx-20">
@@ -208,6 +417,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        13
         <br />
         <HeroSection12 />
         <br />
@@ -220,9 +430,11 @@ export default function Home() {
         <br />
         <br />
         <br />
+        14
         <br />
         <HeroSection13 />
         <br />
+        15
         <br />
         <div className="relative px-12 py-4 -mx-20">
           {/* Vídeo de background */}
@@ -260,8 +472,10 @@ export default function Home() {
           <br />
         </div>
         <br />
+        16
         <HeroSectionV2 />
         <br />
+        17
         <br />
         <div className="relative px-12 py-4 -mx-20">
           {/* Vídeo de background */}
@@ -309,9 +523,11 @@ export default function Home() {
         <br />
         <br />
         <br />
+        18
         <br />
         <HeroSectionV22 />
         <br />
+        19
         <br />
         <div className="relative px-12 py-4 -mx-20">
           {/* Vídeo de background */}
@@ -359,9 +575,11 @@ export default function Home() {
         <br />
         <br />
         <br />
+        20
         <br />
         <HeroSectionV23 />
         <br />
+        21
         <br />
         <div className="relative px-12 py-4 -mx-20">
           {/* Vídeo de background */}
@@ -420,6 +638,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        22
         <br />
         <HeroSectionV24 />
         <br />
@@ -432,6 +651,7 @@ export default function Home() {
         <br />
         <br />
         <br />
+        23
         <br />
         <HeroSectionV25 />
         <br />
