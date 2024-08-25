@@ -51,7 +51,7 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-fit sm:w-fit rounded-full mr-4 bg-gradient-to-br from-gray-900 via-indigo-900 to-teal-400 hover:bg-slate-200 text-white">
               Solicitar Proposta
             </button>
-            <button className="px-6 py-3 w-fit sm:w-fit rounded-full bg-white hover:bg-slate-300 text-black border border-gray-800 mt-3">
+            <button className="px-6 py-3 w-fit sm:w-fit rounded-full bg-white hover:bg-slate-200 text-black border border-gray-800 mt-3">
               Ver Portfólio
             </button>
           </div>
