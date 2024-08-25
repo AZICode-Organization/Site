@@ -17,7 +17,7 @@ const NavLinks = [
     href: '#portfolio'
   },
   {
-    title: 'contato',
+    title: 'Contato',
     href: '#contato'
   },
 ]
