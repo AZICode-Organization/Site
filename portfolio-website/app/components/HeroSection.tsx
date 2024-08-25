@@ -2,7 +2,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
-const HeroSectionV25 = () => {
+const HeroSection = () => {
   return (
     <section className="relative bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-12 relative z-10">
@@ -72,4 +72,4 @@ const HeroSectionV25 = () => {
   );
 }
 
-export default HeroSectionV25;
+export default HeroSection;
