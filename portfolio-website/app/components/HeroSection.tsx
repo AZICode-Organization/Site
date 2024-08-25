@@ -41,7 +41,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-black mb-6 text-base sm:text-lg lg:text-xl ">
+          <p className="text-black mb-6 text-base sm:text-lg lg:text-xl font-semibold sm:font-normal">
             Soluções digitais inovadoras para impulsionar o seu negócio. Especializados em transformar ideias em realidade.
           </p>
           <div>
@@ -50,6 +50,9 @@ const HeroSection = () => {
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-300 text-gray-800 border border-gray-800 mt-3">
               Ver Portfólio
+            </button>
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-gray-900 via-indigo-900 to-teal-400 border border-gray-800 mt-3">
+              <span className="block bg-white hover:bg-slate-200 rounded-full px-5 py-2 text-black">Ver Portfólio</span>
             </button>
           </div>
         </div>
@@ -62,7 +65,7 @@ const HeroSection = () => {
           loop
           muted
           controls={false}
-          className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none sm:opacity-100 opacity-30"
         >
           <source src="/images/white.mp4" type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
