@@ -6,9 +6,9 @@ import Image from 'next/image'
 const HeroSection = () => {
   return (
     <section className="relative bg-white">
-      <div className="grid grid-cols-1 sm:grid-cols-12 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-12 relative z-10 mt-80">
         {/* Coluna de texto */}
-        <div className="col-span-5 place-self-center text-left sm:text-left px-3 sm:px-16">
+        <div className="col-span-5 place-self-center text-left sm:text-left px-4 sm:px-16">
           <h1 className="text-gray-900 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extralight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-900 to-teal-400">
             <Image src="/images/logo.svg" alt="Logo"  width={250} height={0} />
@@ -41,14 +41,17 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-black mb-6 text-base sm:text-lg lg:text-xl font-semibold sm:font-normal">
+
+          <p className="text-black  text-base sm:text-lg lg:text-xl font-semibold sm:font-normal mt-10 mr-20 sm:mr-0 mb-6 ">
             Soluções digitais inovadoras para impulsionar o seu negócio. Especializados em transformar ideias em realidade.
           </p>
-          <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-gray-900 via-indigo-900 to-teal-400 hover:bg-slate-200 text-white">
+  
+            {/* Botões */}
+          <div className="mb-60 sm:mb-44">
+            <button className="px-6 py-3 w-fit sm:w-fit rounded-full mr-4 bg-gradient-to-br from-gray-900 via-indigo-900 to-teal-400 hover:bg-slate-200 text-white">
               Solicitar Proposta
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-white hover:bg-slate-300 text-black border border-gray-800 mt-3">
+            <button className="px-6 py-3 w-fit sm:w-fit rounded-full bg-white hover:bg-slate-300 text-black border border-gray-800 mt-3">
               Ver Portfólio
             </button>
           </div>
