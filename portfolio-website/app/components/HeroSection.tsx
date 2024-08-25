@@ -1,18 +1,18 @@
 "use client";
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image'
 
 const HeroSection = () => {
   return (
     <section className="relative bg-white">
       <div className="grid grid-cols-1 sm:grid-cols-12 relative z-10">
         {/* Coluna de texto */}
-        <div className="col-span-5 place-self-center text-left sm:text-left px-16">
-          <h1 className="text-gray-900 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        <div className="col-span-5 place-self-center text-left sm:text-left px-3 sm:px-16">
+          <h1 className="text-gray-900 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extralight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-900 to-teal-400">
-              AZI Code
+            <Image src="/images/logo.svg" alt="Logo"  width={250} height={0} />
             </span>
-            <br />
             <TypeAnimation
               sequence={[
                 'Softwares',
