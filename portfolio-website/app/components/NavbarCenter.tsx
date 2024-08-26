@@ -42,11 +42,11 @@ const Navbar = () => {
           {
             !isOpen ? (
               <button onClick={() => setIsOpen(true)} className="flex items-center px-3 py-2 text-gray-700 hover:text-black hover:border-black">
-                <Bars3Icon clasName="h-5 w-5" width={22} height={22}/>
+                <Bars3Icon className="h-5 w-5" />
               </button>
             ) : (
-              <button onClick={() => setIsOpen(false)} className="flex items-center px-3 py-2 text-gray-700 hover:text-white hover:border-white">
-                <XMarkIcon clasName="h-5 w-5" width={22} height={22}/>
+              <button onClick={() => setIsOpen(false)} className="flex items-center px-3 py-2 text-gray-700 hover:text-black hover:border-black">
+                <XMarkIcon className="h-5 w-5"/>
               </button>
             )
           }
