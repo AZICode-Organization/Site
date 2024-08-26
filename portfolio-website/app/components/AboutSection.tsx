@@ -33,7 +33,7 @@ const AboutSection = () => {
           {/* Botões */}
           <div className="mt-3 text-right md:text-left mb-9 md:mb-0">
 
-            <button className="px-6 py-2 w-fit sm:w-fit rounded-full bg-white hover:bg-slate-200 text-black border border-gray-800 mt-3">
+            <button className="px-6 py-2 w-fit sm:w-fit rounded-full bg-white hover:bg-gray-100 text-black border border-gray-800 mt-3">
               Conheça a equipe
             </button>
           </div>
