@@ -20,7 +20,7 @@ const AboutSection = () => {
         </div>
 
         {/* Coluna 2 - Texto Principal */}
-        <div className="col-span-12 md:col-span-7 mb-4 md:mb-0 pr-4 md:pr-0">
+        <div className="col-span-12 md:col-span-8 mb-4 md:mb-0 pr-4 md:pr-0">
 
           <p className="text-2xl font-light">
             A AZI CODE revoluciona a gestão empresarial com <span className="font-semibold text-indigo-900">soluções tecnológicas inovadoras </span>
@@ -41,7 +41,7 @@ const AboutSection = () => {
         </div>
 
         {/* Coluna 3 - Logo */}
-        <div className="col-span-12 md:col-span-2 sm:flex justify-center md:justify-end hidden self-start ">
+        <div className="col-span-12 md:col-span-1 sm:flex justify-center md:justify-end hidden self-start ">
           {/* Logo */}
           <Image src="/images/logominiblack.svg" alt="Logo" width={70} height={70} />
         </div>
