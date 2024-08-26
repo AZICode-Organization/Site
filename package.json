@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "@heroicons/react": "^2.1.5",
     "react-type-animation": "^3.2.0"
   }
