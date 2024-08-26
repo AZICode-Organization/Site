@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const AboutSection = () => {
   return (
-    <section className="text-black bg-neutral-200 py-2">
+    <section className="text-black bg-zinc-50 py-2">
 
       <div className="md:grid md:grid-cols-12 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-20 xl:px-16">
 
@@ -33,7 +33,7 @@ const AboutSection = () => {
           {/* Botões */}
           <div className="mt-3 text-right md:text-left mb-9 md:mb-0">
 
-            <button className="px-6 py-2 w-fit sm:w-fit rounded-full bg-transparent hover:bg-slate-200 text-black border border-gray-800 mt-3">
+            <button className="px-6 py-2 w-fit sm:w-fit rounded-full bg-white hover:bg-slate-200 text-black border border-gray-800 mt-3">
               Conheça a equipe
             </button>
           </div>
