@@ -53,17 +53,16 @@ const Navbar = () => {
         </div>
 
 
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul>
-            {
-              NavLinks.map((link, index) => (
-                <li key={index} className="inline-block px-3 py-3">
-                  <NavLink href={link.href} title={link.title} />
-                </li>
-              ))
-            }
-          </ul>
-        </div>
+    {/* Menu Desktop */}
+    <div className="hidden md:flex justify-center flex-grow">
+      <ul className="flex space-x-4">
+        {NavLinks.map((link, index) => (
+          <li key={index} className="px-3 py-3">
+            <NavLink href={link.href} title={link.title} />
+          </li>
+        ))}
+      </ul>
+    </div>
 
       </div>
       {isOpen? <MenuOverlay links={NavLinks} /> : null}

@@ -2,9 +2,12 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <div>
-        AboutSection
-    </div>
+    <section className="text-black">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center">
+        <h1 className="text-4xl font-bold">About Me</h1>
+      </div>
+      AboutSection
+    </section>
   )
 }
 
