@@ -55,12 +55,12 @@ const projectsData = [
 
 const ProjectSection = () => {
   return (
-    <section className="bg-neutral-950 px-16">
+    <section className="bg-neutral-950 px-4 md:px-16">
       <h2 className="text-center text-4xl font-bold text-white mt-16 mb-8 md:mb-12">
         Uma pequena seleção de <span className="text-indigo-700">projetos recentes</span>
       </h2>
 
-      <div className="text-white flex flex-row justify-center items center gap-2 pb-12">
+      <div className="text-white flex flex-wrap justify-center items center gap-2 pb-12">
         <button className="rounded-xl bg-indigo-700  px-3 py-1">Todos</button>
         <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">Chat Bots</button>
         <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">Softwares</button>
