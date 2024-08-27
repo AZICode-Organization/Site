@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { CodeBracketIcon } from '@heroicons/react/16/solid';
+import Image from 'next/image';
 
 type ProjectCardProps = {
   imgUrl: string;
@@ -13,8 +14,20 @@ const ProjectCard = ({ imgUrl, title, description, previewUrl }: ProjectCardProp
   return (
     <div className="rounded-3xl border border-neutral-700 bg-black p-4 relative group        ">
 
-      <div className="h-52 md:h-72 rounded-lg" 
-      style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
+      <div className="rounded-lg bg-contain bg-no-repeat bg-center">
+        <Image 
+          src={imgUrl} 
+          alt={title} 
+          layout="responsive"
+          width={16}
+          height={9} 
+          className="rounded-lg"
+        />
+        {/* Mantém a proporção da imagem sem cortar ou replicar  */}
+        {/* A imagem dentro da div é invisível, mas ainda assim define o tamanho da div. */}
+        {/* Isso ajuda a garantir que a div se ajuste ao conteúdo. */}
+        {/* <img src={imgUrl} alt={title} className="invisible w-full h-auto" /> */}
+        
       </div>
 
       <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-black bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-1000 rounded-3xl ">
