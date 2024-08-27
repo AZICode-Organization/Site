@@ -43,20 +43,13 @@ const projectsData = [
     description: "Descrição do projeto 6",
     image: "/images/projects/Projeto2colors.png",
     tag: ["All", "Web"],
-  },
-  {
-    id: 6,
-    title: "Projeto 6",
-    description: "Descrição do projeto 6",
-    image: "/images/projects/Projeto2colors.png",
-    tag: ["All", "Web"],
-  },
+  }
 ]
 
 
 const ProjectSection = () => {
   return (
-    <div>
+    <section className="bg-zinc-50">
       <h2>Uma pequena seleção de <span className="text-indigo-900">projetos recentes</span></h2>
       <div>
         {projectsData.map((project) =>
@@ -68,7 +61,7 @@ const ProjectSection = () => {
           />
         )}
       </div>
-    </div>
+    </section>
   )
 }
 
