@@ -8,6 +8,7 @@ const projectsData = [
     description: "Descrição do projeto 1",
     image: "/images/projects/ProjetoSolara.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projectsData = [
     description: "Descrição do projeto 2",
     image: "/images/projects/ProjetoWhite.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const projectsData = [
     description: "Descrição do projeto 3",
     image: "/images/projects/ProjetoColorFull.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   },
   {
     id: 4,
@@ -29,13 +32,15 @@ const projectsData = [
     description: "Descrição do projeto 4",
     image: "/images/projects/projeto.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   },
   {
     id: 5,
     title: "Projeto 5",
     description: "Descrição do projeto 5",
-    image: "/images/projects/ProjetoMaster.png",
+    image: "/images/projects/ProjectMaster.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   },
   {
     id: 6,
@@ -43,21 +48,23 @@ const projectsData = [
     description: "Descrição do projeto 6",
     image: "/images/projects/Projeto2colors.png",
     tag: ["All", "Web"],
+    previewUrl: "https://www.google.com"
   }
 ]
 
 
 const ProjectSection = () => {
   return (
-    <section className="bg-zinc-50">
-      <h2>Uma pequena seleção de <span className="text-indigo-900">projetos recentes</span></h2>
-      <div>
+    <section className="bg-neutral-950 px-16">
+      <h2 className="text-center text-4xl font-bold text-white mt-16 mb-8 md:mb-12">Uma pequena seleção de <span className="text-indigo-700">projetos recentes</span></h2>
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
         {projectsData.map((project) =>
           <ProjectCard
             key={project.id}
             title={project.title}
             description={project.description}
             imgUrl={project.image}
+            previewUrl={project.previewUrl}
           />
         )}
       </div>
