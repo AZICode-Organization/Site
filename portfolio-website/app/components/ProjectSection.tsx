@@ -1,5 +1,7 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag'
 
 const projectsData = [
   {
@@ -15,7 +17,7 @@ const projectsData = [
     title: "Sobrenatural",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/ProjetoWhite.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com"
   },
   {
@@ -23,7 +25,7 @@ const projectsData = [
     title: "O caminho até aqui",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/ProjetoColorFull.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com"
   },
   {
@@ -31,7 +33,7 @@ const projectsData = [
     title: "Início de tudo",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/projeto.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com"
   },
   {
@@ -54,6 +56,17 @@ const projectsData = [
 
 
 const ProjectSection = () => {
+  const [tag, setTag] = useState("All");
+
+  
+  const handleTagChange = (newTag: string) => {
+    setTag(newTag);
+  };
+
+  const filteredProjects = projectsData.filter((project) => 
+    project.tag.includes(tag)
+  );
+
   return (
     <section className="bg-neutral-950 px-4 md:px-16">
       <h2 className="text-center text-4xl font-bold text-white mt-16 mb-8 md:mb-12">
@@ -61,16 +74,25 @@ const ProjectSection = () => {
       </h2>
 
       <div className="text-white flex flex-wrap justify-center items center gap-2 pb-12">
-        <button className="rounded-xl bg-indigo-700  px-3 py-1">Todos</button>
-        <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">Chat Bots</button>
-        <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">Softwares</button>
-        <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">Web Sites</button>
-        <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">UI/UX</button>
-        <button className="rounded-xl bg-white text-black px-3 py-1 hover:bg-indigo-700 hover:text-white">SEO</button>
+        <ProjectTag
+          onClick={handleTagChange}
+          name="All"
+          isSelected={tag === "All"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
+        />
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectsData.map((project) =>
+        {filteredProjects.map((project) =>
           <ProjectCard
             key={project.id}
             title={project.title}
