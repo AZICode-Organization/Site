@@ -2,6 +2,9 @@
 import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
+import ProjectSwiper from './ProjectSwiper'
+import ProjectSwiper2 from './ProjectSwiper2'
+import ProjectSwiper3 from './ProjectSwiper3'
 
 const projectsData = [
   {
@@ -16,7 +19,7 @@ const projectsData = [
     id: 2,
     title: "Sobrenatural",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/ProjetoWhite.png",
+    image: "/images/projects/ProjetoColorFull.png",
     tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com"
   },
@@ -24,7 +27,7 @@ const projectsData = [
     id: 3,
     title: "O caminho até aqui",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/ProjetoColorFull.png",
+    image: "/images/projects/as.jpg",
     tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com"
   },
@@ -54,16 +57,15 @@ const projectsData = [
   }
 ]
 
-
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
 
-  
+
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
 
-  const filteredProjects = projectsData.filter((project) => 
+  const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
   );
 
@@ -91,7 +93,14 @@ const ProjectSection = () => {
         />
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+
+    
+      <div className="md:hidden mb-32">
+        <ProjectSwiper3 projects={filteredProjects} />
+      </div>
+
+
+      <div className="hidden md:grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) =>
           <ProjectCard
             key={project.id}

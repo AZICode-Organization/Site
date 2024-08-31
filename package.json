@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "@heroicons/react": "^2.1.5",
-    "react-type-animation": "^3.2.0"
+    "@types/swiper": "^6.0.0",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^11.1.11"
   }
 }
