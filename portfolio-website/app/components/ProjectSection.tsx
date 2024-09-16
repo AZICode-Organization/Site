@@ -2,8 +2,6 @@
 import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
-import ProjectSwiper from './ProjectSwiper'
-import ProjectSwiper2 from './ProjectSwiper2'
 import ProjectSwiper3 from './ProjectSwiper3'
 
 const projectsData = [
