@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React, {useState} from 'react'
 import linkedin from '../../public/images/linkedin-icon.svg';
 import facebook from '../../public/images/facebook-icon.svg';
 import instagram from '../../public/images/instagram-icon.svg';
@@ -7,6 +8,31 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const EmailSection = () => {
+  const [emailSubmit, setEmailSubmit] = useState(false);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = {
+      email: (e.target as HTMLFormElement).email.value,
+      subject: (e.target as HTMLFormElement).subject.value,
+      message: (e.target as HTMLFormElement).message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+
+    if (response.status === 200) {
+      setEmailSubmit(true);
+    }
+  };
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-4 md:px-16">
       <div>
@@ -34,10 +60,11 @@ const EmailSection = () => {
       </div>
 
       <div>
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="email" className="text-gray-500 block mb-2 text-sm font-medium">Seu email</label>
             <input
+              name="email"
               type="email"
               id="email"
               required
@@ -48,6 +75,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label htmlFor="subject" className="text-gray-500 block mb-2 text-sm font-medium">Assunto</label>
             <input
+              name="subject"
               type="text"
               id="subject"
               required
@@ -71,6 +99,9 @@ const EmailSection = () => {
           >
             Enviar
           </button>
+          {emailSubmit && (
+            <p className="text-green-500 text-sm mt-2">Email enviado com sucesso!</p>
+          )}
         </form>
       </div>
     </section>
