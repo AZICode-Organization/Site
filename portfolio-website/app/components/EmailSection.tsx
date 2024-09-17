@@ -34,7 +34,7 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-4 md:px-16">
+    <section className="grid md:grid-cols-2 my-0 md:my-12 py-24 gap-4 px-4 md:px-16">
       <div>
         <h5 className="text-xl font-bold text-black my-2">Pegue um café e vamos conversar!</h5>
         <p className="text-[#4b4d4d] mb-4 max-w-md">
@@ -43,7 +43,7 @@ const EmailSection = () => {
           em contato com você o mais rápido possível. Seja para tirar dúvidas, discutir novos projetos ou apenas
           trocar ideias, estamos aqui para te ouvir!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 mb-4 md:mb-0">
           <Link href="https://www.linkedin.com/in/carlos-%C3%A1quila/">
             <Image src={linkedin} alt="LinkedIn" className="cursor-pointer" />
           </Link>
