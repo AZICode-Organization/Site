@@ -8,10 +8,10 @@ import Image from 'next/image';
 
 const EmailSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 bg-black">
+    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-4 md:px-16">
       <div>
-        <h5 className="text-xl font-bold text-white my-2">Vamos Conectar</h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <h5 className="text-xl font-bold text-black my-2">Pegue um café e vamos conversar!</h5>
+        <p className="text-[#4b4d4d] mb-4 max-w-md">
           Quer saber mais sobre como podemos ajudar a sua empresa a crescer com soluções digitais inovadoras?
           Estamos prontos para conversar sobre seus projetos e ideias. Preencha o formulário ao lado e entraremos
           em contato com você o mais rápido possível. Seja para tirar dúvidas, discutir novos projetos ou apenas
@@ -34,15 +34,43 @@ const EmailSection = () => {
       </div>
 
       <div>
-        <form className="flex flex-col gap-4">
-          <label htmlFor="email" className="text-white">Seu email</label>
-          <input
-            type="email"
-            id="email"
-            required
-            placeholder="alan.turing@gmail.com"
-
-          />
+        <form className="flex flex-col">
+          <div className="mb-6">
+            <label htmlFor="email" className="text-gray-500 block mb-2 text-sm font-medium">Seu email</label>
+            <input
+              type="email"
+              id="email"
+              required
+              className="bg-transparent border border-gray-500 text-gray-500 placeholder-gray-500 text-sm rounded-lg block w-full p-2.5"
+              placeholder="alan.turing@gmail.com"
+            />
+          </div>
+          <div className="mb-6">
+            <label htmlFor="subject" className="text-gray-500 block mb-2 text-sm font-medium">Assunto</label>
+            <input
+              type="text"
+              id="subject"
+              required
+              className="bg-transparent border border-gray-500 text-gray-500 placeholder-gray-500 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Chatbot para e-commerce"
+            />
+          </div>
+          <div className="mb-6">
+            <label htmlFor="message" className="text-gray-500 block mb-2 text-sm font-medium">Mensagem</label>
+            <textarea
+              name="message"
+              id="message"
+              required
+              className="bg-transparent border border-gray-500 text-gray-500 placeholder-gray-500 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Olá, gostaria de saber mais sobre o chatbot para e-commerce."
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950"
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </section>
