@@ -26,13 +26,19 @@ const ProjectSwiper = ({ projects }: ProjectSwiperProps) => {
   const [activeIndex, setActiveIndex] = useState(2);
 
   return (
-    <div className=" md:grid md:grid-cols-2 gap-8">
-      <div>
-        <p className="text-[#4b4d4d] mb-4 max-w-md">
+    <div className=" md:flex md:flex-row md:justify-center md:items-center md:gap-12 md:bg-gradient-to-b from-[rgba(255,255,255,0.28)] to-[rgba(255,255,255,0)] md:backdrop-blur-xl md:rounded-3xl md:w-full md:max-w-[1000px] md:shadow-[inset_0_0.5px_0_1px_rgba(255,255,255,0.23),inset_0_1px_0_0_rgba(255,255,255,0.66),0_4px_16px_rgba(0,0,0,0.12)] p-9">
+      <div className="flex flex-col justify-center items-center text-justify w-full max-w-[500px]">
+        <p className="text-white font-medium text-base mb-5">
           {projects[activeIndex].info}
         </p>
+        <button className="block px-10 py-2 mt-4 mx-auto font-bold text-indigo-900 bg-white bg-opacity-90 rounded-md shadow-lg border border-white border-opacity-30 hover:animate-bounce-in transition-all duration-500">
+          Falar com especialista
+        </button>
+        <button className="block px-10 py-2 mt-4 mx-auto font-bold text-white bg-indigo-900 bg-opacity-90 rounded-md shadow-lg hover:animate-bounce-in transition-all duration-500">
+          Falar com especialista
+        </button>
       </div>
-    
+
       <Swiper
         modules={[EffectCards, Mousewheel]}
         effect="cards"
@@ -64,8 +70,8 @@ const ProjectSwiper = ({ projects }: ProjectSwiperProps) => {
             <h5 className="absolute bottom-0 left-0 ml-5 mb-5 text-xl font-semibold text-white z-20">
               {project.title}
             </h5>
-          
-          
+
+
 
           </SwiperSlide>
         ))}

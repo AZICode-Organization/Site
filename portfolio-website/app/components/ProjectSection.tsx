@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 import ProjectSwiper3 from './ProjectSwiper3'
+import ProjectSwiper4 from './ProjectSwiper4'
 
 const projectsData = [
   {
@@ -11,7 +12,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/ProjetoSolara.png",
     tag: ["All", "Web"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Esse é um projeto de um site de uma empresa de transporte de cargas. O site foi desenvolvido com HTML, CSS e JavaScript. O site é responsivo e tem uma animação de scroll suave."
   },
   {
     id: 2,
@@ -19,7 +21,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/ProjetoColorFull.png",
     tag: ["All", "Mobile"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Esse é um projeto de um aplicativo de streaming de música. O aplicativo foi desenvolvido com React Native e TypeScript. O aplicativo é responsivo e tem uma animação de scroll suave."
   },
   {
     id: 3,
@@ -27,7 +30,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/as.jpg",
     tag: ["All", "Mobile"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Um projeto para novos desenvolvedores que estão começando a carreira. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
   },
   {
     id: 4,
@@ -35,7 +39,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/projeto.png",
     tag: ["All", "Mobile"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Novo produto para membro da academia. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
   },
   {
     id: 5,
@@ -43,7 +48,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/ProjectMaster.png",
     tag: ["All", "Web"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Um projeto de um site de um comediante. O site foi desenvolvido com HTML, CSS e JavaScript. O site é responsivo e tem uma animação de scroll suave."
   },
   {
     id: 6,
@@ -51,7 +57,8 @@ const projectsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
     image: "/images/projects/Projeto2colors.png",
     tag: ["All", "Web"],
-    previewUrl: "https://www.google.com"
+    previewUrl: "https://www.google.com",
+    info: "Controle de estoque para uma empresa de transporte de cargas. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
   }
 ]
 
@@ -93,10 +100,13 @@ const ProjectSection = () => {
 
 
     
-      <div className="md:hidden mb-32">
+      <div className=" mb-32">
         <ProjectSwiper3 projects={filteredProjects} />
       </div>
 
+      <div className=" mb-32 md:flex md:flex-row md:justify-center items-center">
+        <ProjectSwiper4 projects={filteredProjects} />
+      </div>
 
       <div className="hidden md:grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) =>
@@ -109,6 +119,7 @@ const ProjectSection = () => {
           />
         )}
       </div>
+
     </section>
   )
 }
