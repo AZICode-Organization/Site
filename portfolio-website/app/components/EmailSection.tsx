@@ -45,16 +45,16 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2 mb-4 md:mb-0">
           <Link href="https://www.linkedin.com/in/carlos-%C3%A1quila/">
-            <Image src={linkedin} alt="LinkedIn" className="cursor-pointer" />
+            <Image src={linkedin} alt="LinkedIn" className="cursor-pointer hover:transform hover:scale-105 transition-transform" />
           </Link>
           <Link href="https://www.facebook.com/donat.darkhannaz">
-            <Image src={facebook} alt="Facebook" className="cursor-pointer" />
+            <Image src={facebook} alt="Facebook" className="cursor-pointer hover:transform hover:scale-105 transition-transform" />
           </Link>
           <Link href="https://www.instagram.com/azicode/">
-            <Image src={instagram} alt="Instagram" className="cursor-pointer" />
+            <Image src={instagram} alt="Instagram" className="cursor-pointer hover:transform hover:scale-105 transition-transform" />
           </Link>
           <Link href="https://api.whatsapp.com/send?phone=5535992501377">
-            <Image src={whatsapp} alt="WhatsApp" className="cursor-pointer" />
+            <Image src={whatsapp} alt="WhatsApp" className="cursor-pointer hover:transform hover:scale-105 transition-transform" />
           </Link>
         </div>
       </div>
@@ -95,7 +95,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950"
+            className="bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950 hover:transform hover:scale-105 transition-transform"
           >
             Enviar
           </button>
