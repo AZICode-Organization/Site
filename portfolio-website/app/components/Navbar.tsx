@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href={"/"} className="text-1xl text-black font-semibold">
-          <Image src="/images/logominiblack.svg" alt="Logo" width={50} height={50} />
+          <Image src="/images/logominiblack.svg" alt="Logo" width={50} height={50} className="cursor-pointer hover:transform hover:scale-105 transition-transform"/>
         </Link>
 
         {/* Botão de menu */}
