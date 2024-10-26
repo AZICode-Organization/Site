@@ -80,7 +80,7 @@ const ProjectSection = () => {
         Uma pequena seleção de <span className="text-indigo-700">projetos recentes</span>
       </h2>
 
-      <div className="text-white flex flex-wrap justify-center items center gap-2 pb-12">
+      <div className="text-white flex flex-wrap justify-center items center gap-2 pb-12 ">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -99,15 +99,17 @@ const ProjectSection = () => {
       </div>
 
 
-    
-      <div className=" mb-32">
+      {/* Somente em dispositivos móveis */}
+      <div className="mb-32 block md:hidden">
         <ProjectSwiper3 projects={filteredProjects} />
       </div>
 
-      <div className=" mb-32 md:flex md:flex-row md:justify-center items-center">
+      {/* Somente em dispositivos maiores (tablet e desktop) */}
+      <div className=" mb-32 hidden md:flex md:flex-row md:justify-center items-center">
         <ProjectSwiper4 projects={filteredProjects} />
       </div>
 
+     {/* 
       <div className="hidden md:grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project) =>
           <ProjectCard
@@ -119,6 +121,7 @@ const ProjectSection = () => {
           />
         )}
       </div>
+       */}
 
     </section>
   )
