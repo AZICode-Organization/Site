@@ -9,13 +9,18 @@ import Image from 'next/image';
 
 const EmailSection = () => {
   const [emailSubmit, setEmailSubmit] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     const data = {
       email: (e.target as HTMLFormElement).email.value,
       subject: (e.target as HTMLFormElement).subject.value,
       message: (e.target as HTMLFormElement).message.value,
     };
+
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
     const options = {
@@ -26,13 +31,20 @@ const EmailSection = () => {
       body: JSONdata,
     };
 
+    try {
     const response = await fetch(endpoint, options);
     const resData = await response.json();
 
     if (response.status === 200) {
       setEmailSubmit(true);
     }
+    } catch (error) {
+      console.error("Erro ao enviar email:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return (
     <section id="contato" className="grid md:grid-cols-2 my-0 md:my-12 py-24 gap-4 px-4 md:px-16">
       <div>
@@ -96,8 +108,9 @@ const EmailSection = () => {
           <button
             type="submit"
             className="bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950 hover:transform hover:scale-105 transition-transform"
+            disabled={isSubmitting} // Desativa o botão durante o envio do email
           >
-            Enviar
+            {isSubmitting ? "Enviando..." : "Enviar"}
           </button>
           {emailSubmit && (
             <p className="text-green-500 text-sm mt-2">Email enviado com sucesso!</p>
