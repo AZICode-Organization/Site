@@ -34,7 +34,7 @@ const EmailSection = () => {
     }
   };
   return (
-    <section className="grid md:grid-cols-2 my-0 md:my-12 py-24 gap-4 px-4 md:px-16">
+    <section id="contato" className="grid md:grid-cols-2 my-0 md:my-12 py-24 gap-4 px-4 md:px-16">
       <div>
         <h5 className="text-xl font-bold text-black my-2">Pegue um café e vamos conversar!</h5>
         <p className="text-[#4b4d4d] mb-4 max-w-md">

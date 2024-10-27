@@ -11,10 +11,10 @@ const NavLinks = [
     title: 'Sobre nós',
     href: '#sobre'
   },
-  {
-    title: 'Serviços',
-    href: '#servicos'
-  },
+//  {
+//    title: 'Serviços',
+//    href: '#servicos'
+//  },
   {
     title: 'Portfólio',
     href: '#portfolio'
