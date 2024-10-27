@@ -107,7 +107,9 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950 hover:transform hover:scale-105 transition-transform"
+            className={`bg-indigo-900 text-white py-3 px-4 rounded-lg text-sm font-semibold hover:bg-indigo-950 hover:transform hover:scale-105 transition-transform ${
+              isSubmitting ? 'cursor-not-allowed opacity-50' : ''
+            }`}
             disabled={isSubmitting} // Desativa o botão durante o envio do email
           >
             {isSubmitting ? "Enviando..." : "Enviar"}
