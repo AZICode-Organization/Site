@@ -23,6 +23,15 @@ const projectsData = [
     tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com",
     info: "Esse é um projeto de um aplicativo de streaming de música. O aplicativo foi desenvolvido com React Native e TypeScript. O aplicativo é responsivo e tem uma animação de scroll suave."
+  },
+  {
+    id: 3,
+    title: "O caminho até aqui",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
+    image: "/images/projects/as.jpg",
+    tag: ["All", "Mobile"],
+    previewUrl: "https://www.google.com",
+    info: "Um projeto para novos desenvolvedores que estão começando a carreira. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
   }
 ]
 

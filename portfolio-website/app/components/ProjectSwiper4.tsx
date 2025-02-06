@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import SwiperCore, { EffectCards, Mousewheel } from 'swiper/modules';
+import { EffectCards, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/effect-cards';
 import 'swiper/css';
