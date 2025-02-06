@@ -23,42 +23,6 @@ const projectsData = [
     tag: ["All", "Mobile"],
     previewUrl: "https://www.google.com",
     info: "Esse é um projeto de um aplicativo de streaming de música. O aplicativo foi desenvolvido com React Native e TypeScript. O aplicativo é responsivo e tem uma animação de scroll suave."
-  },
-  {
-    id: 3,
-    title: "O caminho até aqui",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/as.jpg",
-    tag: ["All", "Mobile"],
-    previewUrl: "https://www.google.com",
-    info: "Um projeto para novos desenvolvedores que estão começando a carreira. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
-  },
-  {
-    id: 4,
-    title: "Início de tudo",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/projeto.png",
-    tag: ["All", "Mobile"],
-    previewUrl: "https://www.google.com",
-    info: "Novo produto para membro da academia. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
-  },
-  {
-    id: 5,
-    title: "George Carlin",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/ProjectMaster.png",
-    tag: ["All", "Web"],
-    previewUrl: "https://www.google.com",
-    info: "Um projeto de um site de um comediante. O site foi desenvolvido com HTML, CSS e JavaScript. O site é responsivo e tem uma animação de scroll suave."
-  },
-  {
-    id: 6,
-    title: "Expresso Nepomuceno",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo neque in libero auctor hendrerit.",
-    image: "/images/projects/Projeto2colors.png",
-    tag: ["All", "Web"],
-    previewUrl: "https://www.google.com",
-    info: "Controle de estoque para uma empresa de transporte de cargas. O projeto foi desenvolvido com React e TypeScript. O projeto é responsivo e tem uma animação de scroll suave."
   }
 ]
 
