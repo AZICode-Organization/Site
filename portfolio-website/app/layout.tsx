@@ -7,6 +7,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "AZI CODE | Soluções Tecnológicas Sob Medida",
   description: "A AZI CODE revoluciona a gestão empresarial com soluções inovadoras em software, automação e tecnologia.",
+  icons: {
+    icon: [
+      { rel: "icon", url: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
+      { rel: "apple-touch-icon", url: "/favicon.png", type: "image/png" },
+    ]
+  },
   openGraph: {
     title: "AZI CODE | Soluções Tecnológicas Sob Medida",
     description: "Soluções inovadoras em desenvolvimento de software e automação empresarial.",
