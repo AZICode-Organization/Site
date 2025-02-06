@@ -31,9 +31,11 @@ const ProjectSwiper = ({ projects }: ProjectSwiperProps) => {
         <p className="text-white font-medium text-base mb-5">
           {projects[activeIndex].info}
         </p>
+        {/* 
         <button className="block px-10 py-2 mt-4 mx-auto font-bold text-indigo-900 bg-white bg-opacity-90 rounded-md shadow-lg border border-white border-opacity-30 hover:animate-bounce-in transition-all duration-500">
           Falar com especialista
         </button>
+        */}
         <button className="block px-10 py-2 mt-4 mx-auto font-bold text-white bg-indigo-900 bg-opacity-90 rounded-md shadow-lg hover:animate-bounce-in transition-all duration-500">
           Falar com especialista
         </button>
